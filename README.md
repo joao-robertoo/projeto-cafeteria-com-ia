@@ -58,8 +58,6 @@ Esse conceito pode ser facilmente adaptado para:
 
 ---
 
-## 🎥 Demonstração do Projeto
-
 ### <h2>🎥 Demonstração do Projeto</h2>
 
 <table>
@@ -70,13 +68,13 @@ Esse conceito pode ser facilmente adaptado para:
   </tr>
   <tr>
     <td>
-      <img src="" width="250"/>
+      <img src="https://github.com/joao-robertoo/projeto-cafeteria-com-ia/blob/main/assets/mobile.gif?raw=true" width="250"/>
     </td>
     <td>
-      <img src="" width="350"/>
+      <img src="https://github.com/joao-robertoo/projeto-cafeteria-com-ia/blob/main/assets/tablet.gif?raw=true" width="350"/>
     </td>
     <td>
-      <img src="" width="850"/>
+      <img src="https://github.com/joao-robertoo/projeto-cafeteria-com-ia/blob/main/assets/macbook.gif?raw=true" width="850"/>
     </td>
   </tr>
 </table>
@@ -87,8 +85,9 @@ Esse conceito pode ser facilmente adaptado para:
 
 ```bash
 projeto-cafeteria-com-ia/
-│
-├── img/                # Imagens e assets visuais
+├── assets/             # gif para apresentação
+├── img/                # Imagens visuais
+├── .gitattributes      
 ├── index.html          # Página principal
 ├── styles.css          # Estilos do site
 ├── README.md           # Documentação do projeto
