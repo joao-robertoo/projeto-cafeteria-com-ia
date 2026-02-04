@@ -6,7 +6,6 @@ Este projeto demonstra como **um negócio tradicional pode ser potencializado co
 
 [![Deploy with Vercel](https://img.shields.io/badge/Deploy%20na-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://projeto-cafeteria-com-ia.vercel.app/)
 
-
 ---
 
 ## 📌 Sobre o Projeto
@@ -61,19 +60,26 @@ Esse conceito pode ser facilmente adaptado para:
 
 ## 🎥 Demonstração do Projeto
 
-Aqui você poderá visualizar o funcionamento do site e a interação com o agente de IA.
+### <h2>🎥 Demonstração do Projeto</h2>
 
-📌 **Adicione abaixo um GIF mostrando a navegação e o uso do assistente virtual:**
-
-```md
-![Demonstração do Projeto](./img/demo.gif)
-```
-
-Ou usando um link externo:
-
-```md
-![Demonstração do Projeto](https://link-do-seu-gif-aqui.gif)
-```
+<table>
+  <tr>
+    <th>📱 Mobile</th>
+    <th>📲 Tablet</th>
+    <th>💻 Macbook</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="" width="250"/>
+    </td>
+    <td>
+      <img src="" width="350"/>
+    </td>
+    <td>
+      <img src="" width="850"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
