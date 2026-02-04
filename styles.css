@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- HEADER & NAVBAR --- */
+header {
+    background-color: #1a0f0a; /* Fundo mais escuro para o logo dourado brilhar */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 100px; /* Tamanho ideal para o header */
+    width: auto;
+    transition: transform 0.3s;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: burlywood;
+}
+
+/* --- MENU HAMBURGUER --- */
+.menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+/* --- HERO COM PARALLAX --- */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200');
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+    /* Ativando o Parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-conteudo {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-conteudo h1 {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero-conteudo p {
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: burlywood;
+    color: #2c1810;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    transform: translateY(-3px);
+}
+
+/* --- SEÇÕES --- */
+.sobre {
+    padding: 6rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sobre h2, .produtos h2, .localizacao h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c1810;
+}
+
+.sobre p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.produtos {
+    padding: 6rem 2rem;
+    background-color: #fff;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produto-card {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.4s;
+    border: 1px solid #eee;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.produto-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.preco {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #a67c52;
+    font-size: 1.5rem;
+}
+
+.localizacao {
+    padding: 6rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.contato-info {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mapa {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #1a0f0a;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* --- RESPONSIVIDADE (MOBILE) --- */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: #1a0f0a;
+        width: 100%;
+        height: calc(100vh - 80px);
+        text-align: center;
+        gap: 0;
+        transition: 0.4s;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid #2c1810;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 2rem;
+    }
+
+    /* Animação do X no menu */
+    .menu-btn.active .bar:nth-child(2) { opacity: 0; }
+    .menu-btn.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .menu-btn.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+}
